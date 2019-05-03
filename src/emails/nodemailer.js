@@ -79,7 +79,7 @@ const sendVerify = (username, name, email) => {
             to: email,
             subject: 'Verifikasi Email',
             html: `<p>Hello ${name}, please click the link for verify your email</p>
-            <a href='https://jcherokuexpressmysql.herokuapp.com/verify?username=${username}'><h1>Verifikasi Email</h1></a>
+            <a href='https://dabatasemysql02.herokuapp.com/verify?username=${username}'><h1>Verifikasi Email</h1></a>
             `,
             attachments: [{
                 filename : `invoice.pdf`,

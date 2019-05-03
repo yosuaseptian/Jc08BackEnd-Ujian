@@ -108,7 +108,7 @@ router.get('/users/username', (req, res) => { // READ PROFILE
 
         res.send({
             user,
-            photo: `https://jc08herokusql02.herokuapp.com/upstore/${user.avatar}`
+            photo: `https://dabatasemysql02.herokuapp.com/upstore/${user.avatar}`
         })
         
     })
