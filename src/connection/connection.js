@@ -1,11 +1,11 @@
-const mysql = require('mysql')
+const mysql = require('mysql');
 
 const conn = mysql.createConnection({
-    user: 'yosuaseptian',
-    password: 'waksjenk.101',
-    host: 'db4free.net',
-    database: 'jc8expresmsql',
-    port: '3306'
+    user: "devUser",
+    password: "Waksjenk101",
+    host: "localhost",
+    database: "ujianbackendyosua",
+    port: "3306"
 })
 
 module.exports = conn

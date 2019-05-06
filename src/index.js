@@ -1,46 +1,18 @@
-const express = require('express')
-const userRouter = require('./routers/userRouter')
-const tasksRouter = require('./routers/taskRouter')
+const express = require("express");
+const categories = require('../src/routers/categoriesRouter');
+const movie = require('../src/routers/movieRouter');
+const movcat = require('../src/routers/movecatRouter');
+
 
 const app = express()
-const port = process.env.PORT
-
-app.get('/', (req, res) => {
-    res.send(`<h1>API Running on Heroku port ${port}</h1>`)
-})
+const port = 1992
 
 app.use(express.json())
-app.use(userRouter)
-app.use(tasksRouter)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.use(categories)
+app.use(movie)
+app.use(movcat)
 
 app.listen(port, () => {
-    console.log("Running at ", port);
+    console.log('running at port ' + port);
     
 })
